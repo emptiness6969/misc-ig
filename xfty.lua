@@ -1,4 +1,4 @@
-old = hookfunction(getfenv, function(...)
+old = hookfunction(getgenv, function(...)
     print(...)    
     return old(...)
 end)
