@@ -5,6 +5,7 @@ function requestHandler.new(onErrorCallback, onSuccessCallback)
     local self = setmetatable({}, requestHandler)
     self["onErrorCallback"] = onErrorCallback or nil
     self["onSuccessCallback"] = onSuccessCallback or nil
+    
     return self
 end
 
